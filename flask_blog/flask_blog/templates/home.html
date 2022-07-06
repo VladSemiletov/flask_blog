@@ -21,10 +21,11 @@
         /* background-repeat: no-repeat; */
         /* background-position: 50% 0; */
         background-size: cover;
+        background-color: white
         }
 
-        .navbar{ 
-            background-color: #e2cfc4;
+        .navbar{
+            background-color: black;
             box-shadow: 0px 1px 10px black;
         }
 
@@ -32,19 +33,26 @@
             position: relative;
             z-index: 5;
         }
-        
+
         .heading > h1{
-            font-size: 55px;
-            font-family: 'Alice', serif;
-            color: black;
-            text-shadow: 2px 2px #a44a3f;
+            font: normal 175% 'century gothic', arial, sans-serif;
+            color: #43423F;
+            margin: 0 0 15px 0;
+            padding: 15px 0 5px 0;
         }
 
         .card-text{
-            text-align: justify;
-            color: rgb(43, 37, 37);
-            font-weight: 500;
-            font-size: 22px;
+            letter-spacing: 0.1em;
+            font: normal 100% arial, sans-serif;
+            display: block;
+            float: left;
+            height: 37px;
+            padding: 29px 26px 6px 26px;
+            text-align: center;
+            color: #black;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: transparent;
         }
 
         .container > button{
@@ -52,12 +60,12 @@
             padding: 7px;
             border:1px solid blue;
             border-radius: 5px;
-            transition: 0.3s ease; 
+            transition: 0.3s ease;
         }
 
         .container > button:hover{
             color: white;
-            background-color: blue;
+            background-color: pink;
             /* padding: 5px; */
         }
     </style>
@@ -66,15 +74,16 @@
 {% block content %}
 <div class="container" style="margin: 12rem 4rem; text-align: center;">
     <div class="heading">
-        <h1>ДОБРО ПОЖАЛОВАТЬ!📝</h1>
+        <h1>СТАРТОВАЯ СТРАНИЦА БЛОГА</h1>
     </div>
     <hr class="w3-border-grey" style="margin:auto; width:40%;">
     <br>
     <div class="content-body">
-        <p class="card-text" id="para">Добро пожаловать в мой <strong><em> блог!</em></strong>
-            Большое спасибо за посещение. Я рад видеть вас на просторах моего блога! Это так здорово видеть
-            вас здесь. Позвольте мне сказать вам одну вещь: вы можете не только просматривать
-            новые посты, но и получать обновления...😄</p>
+        <p class="card-text" id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Donec fermentum nunc lacus, elementum fermentum lectus commodo eget.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            Morbi semper neque orci, id accumsan lorem tincidunt id. Sed dapibus nunc faucibus, pharetra lacus viverra, volutpat augue.
+            Aliquam in orci et dolor vehicula interdum. Cras nec vulputate velit. Proin vel erat id tortor convallis laoreet. Praesent eget urna urna.</p>
     </div>
     <br>
 
