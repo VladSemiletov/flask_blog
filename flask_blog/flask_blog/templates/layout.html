@@ -24,21 +24,20 @@
 
     <style>
       body{
-        font: normal .80em 'trebuchet ms', arial, sans-serif;
-        background: #F0EFE2 url(background.png) repeat;
-        color: #777;
+        background-color: #e5e5e5;
+        margin-top: 6.5rem;
       }
 
       .navigation-links{
-        color: grey !important;
+        color: white !important;
         font-weight: 500;
-        background-color: white;
+        background-color: rgb(183, 214, 252);
         border-radius: 5px;
         border-bottom: 4px solid blue;
         margin: 5px;
         background-size: 200% 200%;
         background-image: linear-gradient( transparent 50%, rgb(79, 128, 233) 50%);
-        transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+        transition: background-position 300ms, color 300ms ease, border-color 300ms ease;      
       }
 
       .navigation-links:hover{
@@ -48,7 +47,7 @@
       }
 
       .navbar{
-        background-color: #c6def1;
+        background-color: #c6def1; 
         box-shadow: 0px 1px 10px black;
       }
 
@@ -64,7 +63,7 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="/" style="color: #FD5469; font-family: 'Lobster', cursive; font-weight: 800; font-size: 30px;">Мой блог</a>
+          <a class="navbar-brand mr-4" href="/" style="color: rgb(7, 85, 173); font-family: 'Lobster', cursive; font-weight: 800; font-size: 30px;">Мой блог</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -76,7 +75,11 @@
             <div class="navbar-nav">
                 {% if current_user.is_authenticated %}
                     <a class="nav-item nav-link navigation-links" href="{{url_for('users.account') }}"><i class="fa fa-user"></i>Профиль</a>
+                    <a class="nav-item nav-link navigation-links" href="{{ url_for('posts.new_post') }}"><i class="fa fa-plus"></i>Новый пост</a>
+
+
                     <a class="nav-item nav-link navigation-links" href="{{ url_for('users.logout') }}"><i class="fa fa-sign-out"></i>Выйти</a>
+                    <a class="nav-item nav-link navigation-links" href="{{ url_for('posts.allpost') }}"><i class="fa fa-th"></i>Посты</a>
 
 
                 {% else %}
